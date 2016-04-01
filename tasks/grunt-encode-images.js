@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 						dirUps = img.match(/[^\/](\.[^.\/]*)/g).length;
 						img = img.replace('../','');
 						destDir = '';
-						for (i = 0; i < dirUps; i++) {
+						for (i = 0; i < (cssDirs.length - dirUps); i++) {
 							destDir += cssDirs[i] + '/';
 						}
 					}
